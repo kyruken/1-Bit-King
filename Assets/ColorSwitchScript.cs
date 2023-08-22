@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColorSwitchScript : MonoBehaviour
 {
     public KingInfoScript kingInfo;
+    public bool destroyOnLeave = false;
     private Sprite[] sprites;
     private string spriteNames = "Sprites";
 
@@ -25,6 +26,15 @@ public class ColorSwitchScript : MonoBehaviour
             {
                 changeKingColor(kingInfo.kingSprite, sprites[1], kingInfo.kingLogicScript, "White");
             }
+
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (destroyOnLeave == true)
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -7229,6 +7229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kingInfo: {fileID: 0}
+  destroyOnLeave: 0
 --- !u!1001 &1361840592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7683,6 +7684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kingInfo: {fileID: 0}
+  destroyOnLeave: 0
 --- !u!4 &1610155397
 Transform:
   m_ObjectHideFlags: 0
